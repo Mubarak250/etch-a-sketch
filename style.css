@@ -1,0 +1,95 @@
+body {
+  background-color: rgb(188, 179, 179);
+
+  margin: 0px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: 'Jacquarda Bastarda 9', Arial;
+  font-size: 50px;
+  color: rgb(59, 25, 25);
+  margin: 0px;
+  margin-bottom: 8px;
+
+}
+
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.clear-button, .set-button, .random, .eraser{
+  background-color: transparent;
+  color: rgb(46, 46, 46);
+  font-size: 14px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 1px;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background-color 0.15s,
+    color 0.15s;
+}
+.clear-button:hover, .set-button:hover, .random:hover, .eraser:hover {
+  background-color: rgb(59, 25, 25);
+  color: white;
+}
+.clear-button:active, .set-button:active, .random:active, .eraser:active {
+  opacity: 0.5;
+}
+
+.grid-container {
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+
+  height: 500px;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 1.5);
+}
+
+.js-grid-box {
+  background-color: black;
+}
+
+.color-button-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.settings {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.black {
+  background-color: black;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.black:hover {
+  opacity: 0.8;
+}
+.black:active {
+  opacity: 0.5;
+}
+

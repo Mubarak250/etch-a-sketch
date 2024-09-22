@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
+
+    <title>Etch-A-Sketch</title>
+  </head>
+  <body>
+    <h1 class="title">Etch A Sketch</h1>
+    <div class="button-container">
+      <button class="clear-button" onclick="
+        const square = document.querySelectorAll('.grid-box');
+        square.forEach(function(box) {
+          box.style.backgroundColor = 'white';
+        })
+      ">Clear Color</button>
+
+      <button class="set-button" onclick="
+        clearGrid();
+      ">Set Grid</button>
+    </div>
+    <div class="grid-container"></div>
+
+    <div class="settings">
+      Color Settings
+    </div>
+
+    <div class="color-button-container">
+      <button class="black" onclick="
+        toggleButtons('.black');
+      ">Black</button>
+
+      <button class="random" onclick="
+        toggleButtons('.random');
+      ">Random Color</button>
+
+      <button class="eraser" onclick="
+        toggleButtons('.eraser');
+      ">Eraser</button>
+    </div>
+
+    
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
